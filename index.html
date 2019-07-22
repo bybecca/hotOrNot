@@ -1,0 +1,40 @@
+<!doctype html>
+<html>
+
+<head>
+    <meta charset="UTF-8">
+    <title>Weather App</title>
+    <!--view port for responsive-->
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link href="css/normalize.css" rel="stylesheet" type="text/css">
+    <link href="css/main.css" rel="stylesheet" type="text/css">
+</head>
+
+<body>
+    <div class="wrapper">
+        <header>
+            <div class="heading-text">
+                <h1>Hot or Not</h1>
+            </div>
+        </header>
+        <section class="formStyle">
+            <form action="#">
+                <label for="">enter a city for the latest weather</label>
+
+                <div class="search-bar">
+                    <input class="searchControl" type="text" placeholder="ex toronto" id="searchInput">
+                    <input class="searchControl" id="searchButton" type="submit" value="get weather">
+                </div>
+            </form>
+        </section>
+        <section class="results">
+        </section>
+        <footer>
+        </footer>
+    </div>
+</body>
+<script src="js/jquery-3.3.1.min.js" type="text/javascript"></script>
+<script>"https://ajax.googleapis.com/ajax/libs/jquery/3.4.0/jquery.min.js"</script>
+<script src="js/application.js" type="text/javascript"></script>
+
+</html>

@@ -1,0 +1,254 @@
+@charset "UTF-8";
+/* CSS Document */
+
+
+/*-----this is how you write a comment ------*/
+
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+body {
+    font-size: 62.5%;
+    /*10px = 1.0em*/
+}
+
+html {
+    font-size: 100%;
+}
+
+/*
+.clearFloat {
+    clear: both;
+}
+*/
+
+
+*,
+*:before,
+*:after {
+    -webkit-box-sizing: border-box;
+    -moz-box-sizing: border-box;
+    -ms-box-sizing: border-box;
+    box-sizing: border-box;
+}
+
+
+/*----structure----*/
+
+/* .wrapper {}
+
+header {}
+
+footer {}
+
+#content {}
+
+nav {}
+
+section {} */
+
+/*----navigaion----*/
+
+
+/* a:link,
+a:visited {}
+
+a:hover,
+a:active {} */
+
+/*----typography----*/
+p {
+    color: white; 
+    text-align: center; 
+    font-family: 'montserratbold';
+    margin: 10px 10px 10px 0; 
+}
+
+h1 {
+   color: #805E73;
+   text-align: left;
+   font-family: 'montserratbold';
+} 
+
+label {
+    color: #3B2635; 
+    text-align: left; 
+    font-family: 'montserratlight';
+}
+/* h2 {}
+
+h3 {}
+
+h4 {}
+
+h5 {}
+
+h6 {} */
+
+@font-face {
+    font-family: 'montserratbold';
+    src: url('../fonts/montserrat-bold-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-bold-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+}
+
+@font-face {
+    font-family: 'montserratlight';
+    src: url('../fonts/montserrat-light-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-light-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+
+@font-face {
+    font-family: 'montserratregular';
+    src: url('../fonts/montserrat-regular-webfont.woff2') format('woff2'),
+         url('../fonts/montserrat-regular-webfont.woff') format('woff');
+    font-weight: normal;
+    font-style: normal;
+
+}
+/*Media Queries*/
+
+body {
+    background: #e8cbc0; /* fallback for old browsers */
+    background: -webkit-linear-gradient(to bottom, #e8cbc0, #636fa4); /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to bottom, #e8cbc0, #636fa4); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    height: 100vh; 
+}
+
+/*mobile*/
+
+@media (min-width: 320px) {
+
+.wrapper {
+  width: 310px; 
+  margin: 0 auto; 
+}
+
+.formStyle {
+    background: rgba(255,255,255, 0.3);
+    border-radius: 5px; 
+    padding: 10px 10px; 
+    height: 150px; 
+    width: 100%; /*310px/310px*/ 
+}
+
+input {
+    border: solid 3px #3B2635;
+    border-radius: 0;
+    height: 38px;
+    margin: 10px 0; 
+    transition: 0.3s;
+    width: 100%; /*310px/310px*/ 
+}
+
+input[type='text'] {
+    font-size: 1.4em;
+    margin-right: -4.2px;
+    padding-left: 8px;
+    background: transparent;
+}
+
+input[type="text"]:hover,
+input[type="text"]:focus {
+    background-color:#E8CBC0;
+    color:  #0f2128;
+}
+input[type="submit"] {
+    background-color: #3B2635;
+    color: #fff;
+    font-size: 1.6em; 
+    padding: 0 15px;
+    width: 100%; /*310px/310px*/ 
+}
+
+input[type="submit"]:hover,
+input[type="submit"]:focus {
+    background-color:#E8CBC0;
+    color:  #0f2128;
+}
+
+.results {
+    display: flex;
+    justify-content: center;
+    width: 100%; /*310px/310px*/ 
+}
+
+p {
+    font-size: 2.4em; 
+}
+label {
+    font-size: 1.6em;
+}
+    
+
+}
+
+/*tablet*/
+
+@media (min-width: 768px) {
+    .wrapper {
+        width: 758px;
+        margin: 0 auto;
+    }
+
+    .formStyle {
+        float: left; 
+        height: 90vh; 
+        padding-top: 200px; 
+        text-align: center; 
+        width: 50%; /*341px/758px*/ 
+        
+    }
+
+    .results {
+        margin: 0 auto; 
+        width: 44.9868073878628%; /*379px/758px*/ 
+    }
+
+    h1 {
+        font-size: 2.8em;
+    }
+
+    input[type='text'] {
+        font-size: 2.0em;
+        text-align: center; 
+    }
+
+    label {
+        font-size: 1.8em; 
+    }
+
+    p {
+        font-size: 6.0em; 
+    }
+
+    .weather-name {
+        margin: 50px 0 75px 0; 
+    }
+
+    img {
+        margin-bottom: 75px; 
+        width: 100%; /*758/758*/ 
+    }
+
+}
+
+/*desktop*/
+
+@media (min-width: 1200px) {
+    .wrapper {
+        width: 960px;
+        margin: 0 auto;
+    }
+
+    h1 {
+        font-size: 3.0em;
+    }
+}
